@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.masegroupwork.MazeRunnerRobotController">
+   <TabPane layoutX="7.0" prefHeight="432.0" prefWidth="567.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+     <tabs>
+       <Tab text="Robot">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ImageView fitHeight="401.0" fitWidth="567.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@maze.png" />
+                     </ImageView>
+                     <ImageView fx:id="robo" fitHeight="32.0" fitWidth="26.0" layoutX="14.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@robot.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </AnchorPane>
+         </content>
+            <graphic>
+               <ImageView fx:id="robo1" fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@robot.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+       </Tab>
+       <Tab text="Car">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ImageView fitHeight="390.0" fitWidth="550.0" layoutX="24.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@maze2.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="PlayerCar" fitHeight="37.0" fitWidth="55.0" layoutX="36.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@car.png" />
+                        </image>
+                     </ImageView>
+                  </children></AnchorPane>
+         </content>
+            <graphic>
+               <ImageView fx:id="robo11" fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@car.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+       </Tab>
+     </tabs>
+   </TabPane>
+</AnchorPane>
